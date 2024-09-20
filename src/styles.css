@@ -1,0 +1,104 @@
+body {
+  background-color: #1a1a2e;
+  color: white;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #2a2a40;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #49c1a2;
+}
+
+.todo-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  width: 70%;
+  margin-right: 0.5rem;
+}
+
+button {
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  background-color: #3a3a50;
+  border-radius: 5px;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+.task-item span {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1rem;
+  background-color: #4a4a6a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background-color: #5a5a7a;
+}
+
+.filter-buttons .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.filter-buttons button:not(.active):hover {
+  background-color: #4a4a6a;
+}
